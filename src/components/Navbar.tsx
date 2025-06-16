@@ -29,7 +29,7 @@ const Navbar = () => {
       <div className="container-spacing">
         <div className="flex items-center justify-between">
           <div className="text-xl lg:text-2xl font-bold font-space gradient-text">
-            Portfolio
+            Kuze
           </div>
 
           {/* Desktop Menu */}

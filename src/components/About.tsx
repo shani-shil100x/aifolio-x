@@ -24,7 +24,7 @@ const About = () => {
               style={{ transform: `translateY(${scrollY * 0.1}px)` }}
             >
               <img
-                src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                src="./cdd.jpg"
                 alt="Developer workspace"
                 className="w-full h-80 lg:h-96 object-cover rounded-2xl group-hover:scale-110 transition-transform duration-700"
               />

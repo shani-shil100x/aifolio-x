@@ -45,7 +45,7 @@ const Hero = () => {
           {/* Enhanced Heading with Dark Theme Typography */}
           <div className="mb-12">
             <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold font-space mb-6 leading-tight py-0 my-0 pt-36 ">
-              <span className="gradient-text-enhanced animate-gradient typing-animation">Creative</span>
+              <span className="gradient-text-enhanced animate-gradient typing-animation">Kuze</span>
               <br />
               <span className="text-white text-shadow-xl animate-glow">Developer</span>
             </h1>

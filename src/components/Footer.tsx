@@ -5,13 +5,13 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: Github,
-      href: 'https://github.com',
+      href: 'https://github.com/shani-shil100x',
       label: 'GitHub',
       color: 'hover:text-purple-400'
     },
     {
       icon: Linkedin,
-      href: 'https://linkedin.com',
+      href: 'https://www.linkedin.com/in/shani-shil-321b41366/',
       label: 'LinkedIn',
       color: 'hover:text-blue-400'
     },
