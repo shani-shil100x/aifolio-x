@@ -46,7 +46,7 @@ const Projects = () => {
   }];
   return <section id="projects" className="py-20 relative overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-white to-gray-100 "></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-gray-950 to-gray-900"></div>
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
