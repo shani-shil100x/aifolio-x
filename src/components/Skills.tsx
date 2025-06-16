@@ -48,47 +48,47 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 relative overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-gray-50 to-white"></div>
+    <section id="skills" className="section-spacing relative overflow-hidden bg-gray-900">
+      {/* Dark Background */}
+      <div className="absolute inset-0 bg-gradient-to-b from-gray-950 to-gray-900"></div>
       
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-6xl font-bold font-space mb-6 gradient-text">
+      <div className="container-spacing relative z-10">
+        <div className="text-center mb-12 lg:mb-16">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-space mb-4 lg:mb-6 gradient-text">
             Skills & Expertise
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg lg:text-xl text-gray-400 max-w-3xl mx-auto px-4">
             A comprehensive toolkit for building modern, scalable applications
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {skills.map((skill, index) => (
             <div 
               key={skill.name}
-              className="group relative p-8 glass rounded-3xl hover:scale-105 transition-all duration-500 hover:shadow-xl animate-fade-in-up"
+              className="group relative p-6 lg:p-8 premium-card hover:scale-105 transition-all duration-500 hover:shadow-2xl animate-fade-in-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               {/* Glow Effect */}
-              <div className={`absolute inset-0 bg-gradient-to-r ${skill.color} opacity-0 group-hover:opacity-20 rounded-3xl transition-opacity duration-300 blur-xl`}></div>
+              <div className={`absolute inset-0 bg-gradient-to-r ${skill.color} opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity duration-300 blur-xl`}></div>
               
               <div className="relative z-10">
                 {/* Icon */}
-                <div className={`inline-flex p-4 rounded-2xl bg-gradient-to-r ${skill.color} mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                  <skill.icon size={32} className="text-white" />
+                <div className={`inline-flex p-3 lg:p-4 rounded-2xl bg-gradient-to-r ${skill.color} mb-4 lg:mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                  <skill.icon size={28} className="text-white" />
                 </div>
 
                 {/* Content */}
-                <h3 className="text-xl font-bold text-gray-800 mb-2">{skill.name}</h3>
-                <p className="text-gray-600 mb-6">{skill.description}</p>
+                <h3 className="text-lg lg:text-xl font-bold text-gray-100 mb-2">{skill.name}</h3>
+                <p className="text-gray-400 mb-4 lg:mb-6 text-sm lg:text-base">{skill.description}</p>
 
                 {/* Progress */}
                 <div className="space-y-2">
                   <div className="flex justify-between text-sm">
-                    <span className="text-gray-700 font-medium">Proficiency</span>
-                    <span className="text-gray-600">{skill.progress}%</span>
+                    <span className="text-gray-300 font-medium">Proficiency</span>
+                    <span className="text-gray-400">{skill.progress}%</span>
                   </div>
-                  <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
+                  <div className="h-2 bg-gray-800 rounded-full overflow-hidden">
                     <div 
                       className={`h-full bg-gradient-to-r ${skill.color} rounded-full transition-all duration-1000 ease-out`}
                       style={{ width: `${skill.progress}%` }}
